@@ -767,6 +767,7 @@ describe('PlatformGithubIntegration', () => {
         user: { login: 'ada' },
         assignees: [{ login: 'linus' }],
         requested_reviewers: [{ login: 'margaret' }],
+        labels: [{ name: 'bug' }, 'urgent'],
         merged_by: { login: 'grace' },
         head: { ref: 'feat/intake' },
         base: { ref: 'main' },
@@ -784,6 +785,7 @@ describe('PlatformGithubIntegration', () => {
       merged: true,
       assignees: ['linus'],
       requestedReviewers: ['margaret'],
+      labels: ['bug', 'urgent'],
       headBranch: 'feat/intake',
       baseBranch: 'main',
       author: 'ada',
@@ -1322,7 +1324,7 @@ describe('PlatformGithubIntegration', () => {
       const fetchImpl = vi.fn<typeof fetch>(async input => {
         const url = String(input);
         // addIssueLabels calls the platform label endpoint
-        if (url.includes('/labels')) return json({ labels: ['auto-triaged'] });
+        if (url.includes('/labels')) return json({ labels: ['status: auto-triaged'] });
         throw new Error(`Unexpected fetch: ${url}`);
       });
       // Stub fetch BEFORE constructing the integration — PlatformApiClient

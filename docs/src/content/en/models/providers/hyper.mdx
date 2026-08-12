@@ -35,7 +35,7 @@ for await (const chunk of stream) {
 }
 ```
 
-:::info
+:::note
 
 Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-specific features may not be available. Check the [Charm Hyper documentation](https://hyper.charm.land) for details.
 
@@ -64,10 +64,10 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "videoInput": false,
     "toolUsage": true,
     "reasoning": true,
-    "contextWindow": 1000000,
+    "contextWindow": 1048576,
     "maxOutput": 384000,
-    "inputCost": 0.2,
-    "outputCost": 0.4
+    "inputCost": 0.152432,
+    "outputCost": 0.304864
   },
   {
     "model": "hyper/deepseek-v4-pro",
@@ -90,8 +90,8 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "reasoning": true,
     "contextWindow": 256000,
     "maxOutput": 25600,
-    "inputCost": 0.124,
-    "outputCost": 0.42
+    "inputCost": 0.116,
+    "outputCost": 0.408
   },
   {
     "model": "hyper/glm-5.1",
@@ -101,7 +101,7 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "toolUsage": true,
     "reasoning": true,
     "contextWindow": 202800,
-    "maxOutput": 131072,
+    "maxOutput": 3276,
     "inputCost": 1.52432,
     "outputCost": 4.79072
   },
@@ -113,7 +113,7 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "toolUsage": true,
     "reasoning": true,
     "contextWindow": 1000000,
-    "maxOutput": 128000,
+    "maxOutput": 32768,
     "inputCost": 1.4,
     "outputCost": 4.4
   },
@@ -138,8 +138,8 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "reasoning": true,
     "contextWindow": 262144,
     "maxOutput": 26214,
-    "inputCost": 0.55,
-    "outputCost": 2.89
+    "inputCost": 0.558,
+    "outputCost": 2.94
   },
   {
     "model": "hyper/kimi-k2.6",
@@ -149,7 +149,7 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "toolUsage": true,
     "reasoning": true,
     "contextWindow": 262000,
-    "maxOutput": 262000,
+    "maxOutput": 26214,
     "inputCost": 0.95,
     "outputCost": 4
   },
@@ -186,8 +186,8 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "reasoning": false,
     "contextWindow": 128000,
     "maxOutput": 12800,
-    "inputCost": 0.6066,
-    "outputCost": 1.0386
+    "inputCost": 0.598,
+    "outputCost": 0.738
   },
   {
     "model": "hyper/llama-4-maverick-17b-128e-instruct-fp8",
@@ -210,8 +210,8 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "reasoning": true,
     "contextWindow": 262100,
     "maxOutput": 6553,
-    "inputCost": 0.41,
-    "outputCost": 1.52
+    "inputCost": 0.436,
+    "outputCost": 1.66
   },
   {
     "model": "hyper/minimax-m3",
@@ -234,8 +234,8 @@ Mastra uses the OpenAI-compatible `/chat/completions` endpoint. Some provider-sp
     "reasoning": false,
     "contextWindow": 106000,
     "maxOutput": 10600,
-    "inputCost": 0.569,
-    "outputCost": 2.135
+    "inputCost": 0.445,
+    "outputCost": 2.145
   },
   {
     "model": "hyper/qwen3-next-80b-a3b-instruct",
