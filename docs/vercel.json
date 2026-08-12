@@ -2051,6 +2051,11 @@
       "permanent": true
     },
     {
+      "source": "/reference/processors/cost-guard-processor",
+      "destination": "/reference/processors/cost-control-processor",
+      "permanent": true
+    },
+    {
       "source": "/docs/editor/prompts/llms.txt",
       "destination": "/docs/editor/overview/llms.txt",
       "permanent": true
@@ -3693,6 +3698,11 @@
     {
       "source": "/guides/agent-frameworks/ai-sdk/llms.txt",
       "destination": "/reference/ai-sdk/overview/llms.txt",
+      "permanent": true
+    },
+    {
+      "source": "/reference/processors/cost-guard-processor/llms.txt",
+      "destination": "/reference/processors/cost-control-processor/llms.txt",
       "permanent": true
     }
   ]
