@@ -1,5 +1,12 @@
 # @mastra/deepeval
 
+## 0.1.2-alpha.1
+
+### Patch Changes
+
+- Updated dependencies [[`2d1ec9e`](https://github.com/mastra-ai/mastra/commit/2d1ec9e6e349c7f05555a2ffcc79308cd96f48e2)]:
+  - @mastra/observability@1.17.0-alpha.1
+
 ## 0.1.2-alpha.0
 
 ### Patch Changes

@@ -1,5 +1,14 @@
 # @mastra/code-sdk
 
+## 1.2.1-alpha.2
+
+### Patch Changes
+
+- Updated dependencies [[`2d1ec9e`](https://github.com/mastra-ai/mastra/commit/2d1ec9e6e349c7f05555a2ffcc79308cd96f48e2), [`f82f22f`](https://github.com/mastra-ai/mastra/commit/f82f22f56c58ab90e8a7501aaa5039a4e13cfe8b)]:
+  - @mastra/observability@1.17.0-alpha.1
+  - @mastra/memory@1.26.2-alpha.1
+  - @mastra/mcp@1.16.0
+
 ## 1.2.1-alpha.1
 
 ### Patch Changes

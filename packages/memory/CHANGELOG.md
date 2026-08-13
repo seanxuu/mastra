@@ -1,5 +1,17 @@
 # @mastra/memory
 
+## 1.26.2-alpha.1
+
+### Patch Changes
+
+- Added continuation support to the Observational Memory `recall` tool. When a single message part is larger than the result budget, the result now includes `nextCharOffset` and a note explaining how to fetch the next chunk, so oversized parts can be read across multiple calls instead of returning the same truncated prefix every time. ([#19821](https://github.com/mastra-ai/mastra/pull/19821))
+
+  ```json
+  { "mode": "messages", "cursor": "<message-id>", "partIndex": 0, "detail": "high", "charOffset": 8000 }
+  ```
+
+  Fixes [#19817](https://github.com/mastra-ai/mastra/issues/19817).
+
 ## 1.26.2-alpha.0
 
 ### Patch Changes

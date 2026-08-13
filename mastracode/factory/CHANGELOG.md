@@ -1,5 +1,12 @@
 # @mastra/factory
 
+## 0.7.0-alpha.2
+
+### Patch Changes
+
+- Updated dependencies:
+  - @mastra/code-sdk@1.2.1-alpha.2
+
 ## 0.7.0-alpha.1
 
 ### Minor Changes
